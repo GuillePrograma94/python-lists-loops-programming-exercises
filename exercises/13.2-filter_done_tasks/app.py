@@ -9,6 +9,8 @@ tasks = [
 	{ "label": 'Make a trip', "done": False }
 ]
 
+def data_status(data):
+    return data["done"] == True
 
-# Your code here
-
+updated_list = list(filter(data_status, tasks))
+print(updated_list)

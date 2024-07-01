@@ -6,5 +6,5 @@ contact = {
 
 # Your code here
 
-for key in contact.keys():
-    print(f"{key}: {contact[key]}")
+for key in contact.items():
+    print(f"{key}: {value}")

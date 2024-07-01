@@ -3,6 +3,12 @@ par = "Lorem ipsum dolor sit amet consectetur adipiscing elit Curabitur eget bib
 counts = {}
 
 # Your code here
-
-
+#limpiamos la lista, quitando los espacios y dejándolo todo en minúsculas:
+par_limpio = par.replace(" ","").lower()
+for letter in par_limpio:
+    if letter in counts:
+        counts[letter] += 1
+    else:
+        counts[letter] = 1
+    
 print(counts)
